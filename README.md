@@ -11,7 +11,7 @@ out-of-tree module compilation
 This is what we're really interested in right now.
 
 ```shell
-sudo apt-get install linux-headers-$(uname -a)
+sudo apt-get install linux-headers-$(uname -r)
 find /lib/modules/$(uname -r) -iname "*ltc*"
 make
 ```
