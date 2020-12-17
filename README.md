@@ -47,3 +47,5 @@ References:
 _____________
 [TLDP LKMPG]: http://tldp.org/LDP/lkmpg/2.6/html/index.html
 [ALW compile kernel module]: https://wiki.archlinux.org/index.php/Compile_kernel_module
+[ltc2947 kernel drivers]: https://www.kernel.org/doc/html/latest/hwmon/ltc2947.html
+[ltc2947 SPI source]: https://github.com/torvalds/linux/blob/master/drivers/hwmon/ltc2947-spi.c
