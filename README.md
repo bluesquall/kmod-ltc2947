@@ -25,17 +25,24 @@ make
 - Then to remove the module: `sudo rmmod ltc2947-spi && sudo rmmod ltc2947-core`
 
 On older kernels, you would see messages in `/var/log/messages`, but on newer
-systems, check `journalctl -xe` instead. You should see any `printk` messages
-from the module.
+systems, check `journalctl -xe` instead. If you have two terminals open, you
+can follow along with `journalctl -f`.
 
-If you have two terminals open, you can follow along with `journalctl -f`.
+installation
+------------
 
-TO-DO:
-------
+After you've compiled the modules and verified that they load and unload
+manually, you can install them in the system by:
 
-- Install the built modules. (manually? or is there a different best practice?)
+```shell
+sudo make install
+```
 
-- Use the loaded module to interface with the chip on the Mikroe click.
+This puts the `.ko` files under `/lib/modules/$(uname -r)/kernel/drivers/hwmon`
+and adds `ltc2947_modules.conf` under `/usr/lib/modules-load.d`.
+
+You may need to copy `ltc2947_modules.conf` to `/etc/modules-load.d` and modify
+it there, depending on your system.
 
 References:
 -----------
