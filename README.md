@@ -47,12 +47,15 @@ it there, depending on your system.
 References:
 -----------
 
-- [TLDP LKMPG]
+- [The (original) Linux Kernel Module Programming Guide][TLDP LKMPG]
+
+- [The (updated) Linux Kernel Module Programming Guide (with working examples for 5.x kernels)][sysprog21 LKMPG]
 
 - [Arch Linux Wiki][ALW compile kernel module]
 
 _____________
 [TLDP LKMPG]: http://tldp.org/LDP/lkmpg/2.6/html/index.html
+[sysprog21 LKMPG]: https://sysprog21.github.io/lkmpg/
 [ALW compile kernel module]: https://wiki.archlinux.org/index.php/Compile_kernel_module
 [ltc2947 kernel drivers]: https://www.kernel.org/doc/html/latest/hwmon/ltc2947.html
 [ltc2947 SPI source]: https://github.com/torvalds/linux/blob/master/drivers/hwmon/ltc2947-spi.c
